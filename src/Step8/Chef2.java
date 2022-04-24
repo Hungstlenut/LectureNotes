@@ -1,7 +1,7 @@
 package Step8;
 
 public class Chef2 extends Person {
-    //By using override, we can alter the method.
+    //By using override, we can alter the method. Which is what polymorphism is about as well.
     @Override
     public String speak () {
         return super.speak() + " I love food";
