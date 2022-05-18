@@ -36,7 +36,10 @@ public class StaticTutorial {
         System.out.println(b);
         /*
         We could for example not write:
-        anObject.b(...) and do something to b
+        anObject.b(...) and do something to b, because b is supposed to be constant. Therefore, you can just call it.
+        Use a static method when you want to be able to access the method without an instance of the class.
+        The method belongs to the class, if you are part of the class, you can use it without instantiating a new object
+        of that class.
          */
 
 

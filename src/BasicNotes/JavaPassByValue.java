@@ -13,10 +13,10 @@ public class JavaPassByValue {
         //lets make a human
         Human human = new Human();
         //this human object is now referencing to copied value from the Human class
-        //human is not the same as the variable "prvate String name = Al" below...
+        //human is not the same as the variable "private String name = Al" below...
         human.setName("Alexandro");
         System.out.println(human);
-        //thats why it "resets" the name when we create a new human object
+        //that's why it "resets" the name when we create a new human object
         Human human2 = new Human();
         System.out.println(human2.getName());
 

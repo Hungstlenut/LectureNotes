@@ -5,8 +5,8 @@ public class Downcasting {
 
 
     public static void main(String[] args) {
-        Dog dog1 = new Dog();
-        moreAnimalStuff(dog1);
+        Dog dog2 = new Dog();
+        moreAnimalStuff(dog2);
         //what happens if we try to cast this animal below as a cat?
         Cat cat1 = new Cat();
         moreAnimalStuff(cat1);
@@ -15,7 +15,7 @@ public class Downcasting {
     }
 
     public static void moreAnimalStuff(Animal animal) {
-        //the line below is actually then:
+        //the line above of dog2 is actually then:
         //Dog dog1 = (Dog)Dog();
 
         //since Cat threw an exception...
