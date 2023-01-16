@@ -2,12 +2,14 @@ package Generics;
 /*
 The need for generics comes into play when you need to store or use multiple types of values
 without having to create a new class file every time.
+Generics can not be used with primitive types, which can be substituted with wrappers.
  */
 
 import java.util.ArrayList;
+import java.util.List;
 
 //Generic classes can be specified with angle brackets and whatever name you want. Usually ref with "T".
-public class GenericsExample <T> {
+public class GenericsExample <T> { //now, this class can take in type parameter T, which can be added upon.
 
     T thingToPrint;
 
@@ -43,10 +45,11 @@ public class GenericsExample <T> {
 
     //could've done this as well
     public static <T> T somethingElse (T anything, T anything2) {
-        System.out.println(anything);
-        System.out.println(anything2);
+        System.out.println(anything + (String) anything2); //can't combine 2 whatever type parameters with +
         return anything;
     }
+
+
 
     public static void main(String[] args) {
 //here you need to specify what value type you are using or referencing to, then suddenly, it can print Integers
@@ -56,6 +59,8 @@ public class GenericsExample <T> {
         //no need to specify when calling a method with type T, which could be anything...
         printer.array(123);
         something(345, "anything");
+
+        somethingElse(100, " years of pain");
 
 
     }

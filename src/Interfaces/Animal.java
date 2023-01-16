@@ -6,6 +6,8 @@ public interface Animal {
      * An interface's signature:
      * - A contract
      * - Any class that implements an interface must provide an implementation for these methods
+     * - A class can implement multiple interfaces
+     * - An interface's attributes are public, static and final.
      * - Class implements 1:M interface. Does not extend.
      * A good place to put JavaDoc.
      * You can write UnitTests against an interface
@@ -45,5 +47,5 @@ public interface Animal {
     int age = 0;
 
     void makeNoise();
-
+    void introduce(String name, int age);
 }

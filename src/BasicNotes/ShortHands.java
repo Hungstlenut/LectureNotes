@@ -1,11 +1,21 @@
+
+
+
+
+
+
+
+
+
 package BasicNotes;
+
 
 
 import Step8.Person;
 
 public class ShortHands {
     public static void main(String[] args) {
-
+        System.out.println("Hello world!");
         System.out.println("inline: " + inlineIf(42));
 
         System.out.println("regular: " + regularIf(42));

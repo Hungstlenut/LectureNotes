@@ -10,6 +10,11 @@ public class Main {
         Animal doggy = new Dog();
         doggy.makeNoise();
         Dog d = new Dog();
+        //you can use the interface variables at will, because they're public, static and final...
+        Cat newCat = new Cat(Animal.name, Animal.age);
+        newCat.introduce("Garfield", 3);
+
+
 
     }
 }

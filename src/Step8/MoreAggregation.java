@@ -1,6 +1,7 @@
 package Step8;
 //use of toString method and more aggregation
 //one can not print out an object, you will only print out a memory location.
+//note that only one public class is allowed per java file...
 class Address
 {
     int streetNum;

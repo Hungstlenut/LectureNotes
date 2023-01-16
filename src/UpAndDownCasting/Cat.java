@@ -1,6 +1,9 @@
 package UpAndDownCasting;
 
-public class Cat extends Animal{
+import Interfaces.Animal;
+import Interfaces.Pet;
+
+public class Cat extends UpAndDownCasting.Animal {
 
     private String catNoise;
     private String catAction;
@@ -23,6 +26,7 @@ public class Cat extends Animal{
     public void makeNoise(){
         System.out.println("Moew");
     }
+
     public void scratch(){
         System.out.println("Katching!");
     }

@@ -11,13 +11,15 @@ public class ReturnStatements {
      * Taken from Stackoverflow
      */
     public int add(int x, int y) { // with arguments
-        int z = x+y;
+        int sss = 223;
+        int z = x+y+sss;
         return z;//which makes add() become z, which has to be an int type.
     }
     public static void main(String args[]) {
         ReturnStatements test = new ReturnStatements();
         int add = test.add(10, 20);
         System.out.println("The sum of x and y is: " + add);
+
     }
 
     public Map<String, String> mapTheThings(String keyWord, String certainValue)
