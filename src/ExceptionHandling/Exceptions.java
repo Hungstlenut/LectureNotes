@@ -1,4 +1,6 @@
-public class Step5 {
+package ExceptionHandling;
+
+public class Exceptions {
     public static void main(String[] args) {
         // try/catch/finally brukes for å prøve å fange feil slik at resten av kodestrengen(e) kan fortsatt kjøres.
 
